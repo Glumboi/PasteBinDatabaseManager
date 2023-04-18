@@ -9,3 +9,8 @@ For a code example, please reffer to the demo project inside the src folder.
 Name: SomeGuy3, Age: 21,
 ```
 Note that entries dont need to include a so called identifier ( [PersonXYZ] ).
+
+# Future
+
+- Add ability to upload pastes from the library
+- Add ability to get entry values from the Database class
