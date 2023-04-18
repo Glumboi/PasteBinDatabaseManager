@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasteBinDataBaseManager", "PasteBinDataBaseManager\PasteBinDataBaseManager.csproj", "{B8FF34AD-19B7-47CF-9EC0-618D56D61FF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseManagerDemo", "DataBaseManagerDemo\DataBaseManagerDemo.csproj", "{53EC74ED-CD3A-4203-9E9E-11BFA424612A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8FF34AD-19B7-47CF-9EC0-618D56D61FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FF34AD-19B7-47CF-9EC0-618D56D61FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FF34AD-19B7-47CF-9EC0-618D56D61FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FF34AD-19B7-47CF-9EC0-618D56D61FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53EC74ED-CD3A-4203-9E9E-11BFA424612A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EC74ED-CD3A-4203-9E9E-11BFA424612A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EC74ED-CD3A-4203-9E9E-11BFA424612A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EC74ED-CD3A-4203-9E9E-11BFA424612A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
