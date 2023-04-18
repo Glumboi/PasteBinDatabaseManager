@@ -8,3 +8,4 @@ For an example, please reffer to the demo project insied the src folder.
 [Person2] Name: SomeGuy2, Age: 23,
 Name: SomeGuy3, Age: 21,
 ```
+Note that entries dont need to include a so called identifier ( [PersonXYZ] ).
