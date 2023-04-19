@@ -13,4 +13,3 @@ Note that entries dont need to include a so called identifier ( [PersonXYZ] ).
 # Future
 
 - Add ability to upload pastes from the library
-- Add ability to get entry values from the Database class
