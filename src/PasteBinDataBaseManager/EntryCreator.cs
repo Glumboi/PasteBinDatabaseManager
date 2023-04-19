@@ -21,7 +21,7 @@ public class EntryCreator
         
         foreach (var str in splittedBySpace)
         {
-            if (str.Contains(':'))
+            if (str.Contains(':') && !str.Contains("https"))
             {
                 types.Add(str.Replace(":", ""));
             }
