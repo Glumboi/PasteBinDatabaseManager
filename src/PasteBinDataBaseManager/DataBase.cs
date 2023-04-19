@@ -13,6 +13,7 @@ public class DataBase
         if (url != null && !File.Exists(url))
         {
             _entries = GetEntriesFromPaste(WebReader.ReadFromUrl(url).Result);
+            return;
         }
         
         //Use local file
@@ -41,7 +42,7 @@ public class DataBase
         throw new DataBaseException("Could not find the specified Identifier!\nIs the specified Identifier valid?");
     }
     
-    public Entry[] GetEntriesFromPaste(string[] lines)
+    private Entry[] GetEntriesFromPaste(string[] lines)
     {
         List<Entry> entries = new List<Entry>();
         
