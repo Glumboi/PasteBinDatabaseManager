@@ -49,14 +49,14 @@ public struct Entry
     public string GetEntryInOneLine()
     {
         string result;
-        string createdString = String.Empty;
+        string createdString = "Identifier: " + GetIdentifier() + " | ";
             
         if (_values == null) return string.Empty;
 
         for (var index = 0; index < _values.Length; index++)
         {
             var str = _values[index];
-            createdString += "Identifier: " + GetIdentifier() + " | " + _types[index]+ ": " + _values[index] + ", ";
+            createdString += _types[index]+ ": " + _values[index] + ", ";
         }
 
         result = createdString;
