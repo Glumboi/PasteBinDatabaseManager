@@ -10,10 +10,13 @@ public class DataBase
 
     public DataBase(Entry[] entries, string url)
     {
-        if (url != null)
+        if (url != null && !File.Exists(url))
         {
             _entries = GetEntriesFromPaste(WebReader.ReadFromUrl(url).Result);
         }
+        
+        //Use local file
+        _entries = GetEntriesFromPaste(File.ReadAllLines(url));
     }
 
     public string GetValueOfType(string identifier, string type)
