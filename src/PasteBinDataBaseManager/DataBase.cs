@@ -12,11 +12,6 @@ public class DataBase
     {
         if (url != null)
         {
-            _entries = entries;
-        }
-
-        if (url != null)
-        {
             _entries = GetEntriesFromPaste(WebReader.ReadFromUrl(url).Result);
         }
     }
