@@ -7,6 +7,25 @@
         <Company>Glumboi</Company>
         <AssemblyVersion>1.1.1.0</AssemblyVersion>
         <FileVersion>1.1.1.0</FileVersion>
+        <PlatformTarget>x64</PlatformTarget>
+        <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+        <Title>PasteBinDataBaseManager</Title>
+        <Authors>Glumboi</Authors>
+        <Description>Simple DLL that can be used to create databases out of raw text files on the internet and local</Description>
+        <Copyright>Glumboi (c) 2023</Copyright>
+        <PackageProjectUrl>https://github.com/Glumboi/PasteBinDatabaseManager</PackageProjectUrl>
+        <PackageIcon>Icon.png</PackageIcon>
+        <PackageTags>Pastebin, Database, Raw text, C# 11, .NET7</PackageTags>
+        <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+        <Version>$(AssemblyVersion)</Version>
+        <IsPublishable>True</IsPublishable>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="Assets\Icon.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
 
 </Project>
