@@ -55,7 +55,6 @@ public struct Entry
 
         for (var index = 0; index < _values.Length; index++)
         {
-            var str = _values[index];
             createdString += _types[index] + ": " + _values[index] + ", ";
         }
 

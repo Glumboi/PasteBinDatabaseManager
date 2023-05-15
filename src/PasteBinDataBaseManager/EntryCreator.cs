@@ -5,20 +5,10 @@ public class EntryCreator
     public static Entry CreateEntry(string line)
     {
         string[] splittedBySpace = line.Split(']').Last().Split(": ");
-
-        List<string> types = new List<string>() { };
-        List<string> values = new List<string>() { };
-        string identifier;
-
-        if (!line.Contains('['))
-        {
-            identifier = "NOT DEFINED";
-        }
-        else
-        {
-            identifier = line.Split('[').Last().Split(']').First();
-        }
-
+        List<string> types = new List<string>();
+        List<string> values = new List<string>();
+        string identifier = !line.Contains('[')? "NOT DEFINED" : line.Split('[').Last().Split(']').First();
+        
         for (int i = 0; i < splittedBySpace.Length; i++)
         {
             string str = splittedBySpace[i] += ":";
