@@ -1,15 +1,15 @@
 ﻿using System.Runtime.Serialization;
 
-namespace PasteBinDataBaseManager;
+namespace PasteBinDatabaseManager;
 
 [Serializable]
-public class DataBaseException : Exception
+public class DatabaseException : Exception
 {
-    public DataBaseException(string message) : base(message)
+    public DatabaseException(string message) : base(message)
     { }
     
     // Ensure Exception is Serializable
-    protected DataBaseException(SerializationInfo info, StreamingContext ctxt) 
+    protected DatabaseException(SerializationInfo info, StreamingContext ctxt) 
         : base(info, ctxt)
     { }
 }

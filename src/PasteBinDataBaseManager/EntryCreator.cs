@@ -1,4 +1,4 @@
-﻿namespace PasteBinDataBaseManager;
+﻿namespace PasteBinDatabaseManager;
 
 public class EntryCreator
 {

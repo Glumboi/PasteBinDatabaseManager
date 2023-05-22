@@ -1,6 +1,6 @@
 ﻿using System.Data;
 
-namespace PasteBinDataBaseManager;
+namespace PasteBinDatabaseManager;
 
 public struct Entry
 {
@@ -30,7 +30,7 @@ public struct Entry
             }
         }
 
-        throw new DataBaseException("Could not find a Value matching the given Type. Are you reading from a valid paste?");
+        throw new DatabaseException("Could not find a Value matching the given Type. Are you reading from a valid paste?");
     }
 
     public string GetTypeOfValue(string value)
@@ -43,7 +43,7 @@ public struct Entry
             }
         }
 
-        throw new DataBaseException("Could not find a Type matching the given Value. Are you reading from a valid paste?");
+        throw new DatabaseException("Could not find a Type matching the given Value. Are you reading from a valid paste?");
     }
 
     public string GetEntryInOneLine()
