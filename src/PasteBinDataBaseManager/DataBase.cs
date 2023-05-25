@@ -62,12 +62,16 @@ public class Database
         throw new DatabaseException("Could not find the specified Identifier!\nIs the specified Identifier valid?");
     }
 
-    private IEnumerable<Entry> GetEntriesFromPaste(IEnumerable<string> lines)
+    private List<Entry> GetEntriesFromPaste(IEnumerable<string> lines)
     {
+        List<Entry> rtrnEntries = new List<Entry>();
+
         foreach (var line in lines)
         {
-            yield return EntryCreator.CreateEntry(line);
+            rtrnEntries.Add(EntryCreator.CreateEntry(line));
         }
+
+        return rtrnEntries;
     }
 
     public void PrintAllEntries()
